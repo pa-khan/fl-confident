@@ -1,2 +1,22 @@
++style('header', 'blocks')
 header.header
-    +style('header', 'blocks')
+    .case
+        .header__wrap.row
+            .header__logo
+                img(src="" alt="")
+            .header__nav
+                ul
+                    li
+                        a(href="") Главная
+                    li
+                        a(href="") Решения
+                    li
+                        a(href="") Консалтинг
+                    li
+                        a(href="") О компании
+                    li
+                        a(href="") Контакты
+            .header__call.call
+                .call__icon-left
+                .call__value #[a(href="tel:+74997097900") +7 (499) 709-79-00]
+                .call__icon-right
