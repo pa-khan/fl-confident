@@ -9,8 +9,8 @@ block content
         .case
             .intro__wrap
                 .intro__content
-                    .intro__title #[b Воплощаем] <br>ваше <br> видение в <br> реальность <br>
-                    .intro__list
+                    .intro__title.an.fadeIn-up #[b Воплощаем] <br>ваше <br> видение в <br> реальность <br>
+                    .intro__list.an.fadeIn-up(data-timeout="0.1s")
                         .intro__item
                             .intro__item-icon
                                 img(src=require("../images/chevon.png"), alt="")
@@ -19,48 +19,48 @@ block content
                             .intro__item-icon
                                 img(src=require("../images/chevon.png"), alt="")
                             .intro__item-title #[b Упрощаем] процессы
-                .intro__img
+                .intro__img.an.fadeIn-scaleTo(data-timeout="0.1s")
                     img(src=require("../images/intro-img.png") alt="")
                 .intro__lines
                     img(src=require("../images/lines.png") alt="")
-        .intro__round
+        .intro__round.an.fadeIn-scaleFrom
             img(src=require("../images/shape.png") alt="")
 
     .solutions#solutions
         .case
-            .solutions__title.h2 Решения
+            .solutions__title.h2.an.fadeIn-up Решения
         .solutions__list
             .solutions__item
                 .case
                     .solutions__wrap
-                        .solutions__img-wrap
+                        .solutions__img-wrap.an.fadeIn-scaleTo
                             .solutions__img
                                 img(src=require("../images/solution-1.png") alt="")
-                        .solutions__content
+                        .solutions__content.an.fadeIn-up(data-timeout="0.1s")
                             .solutions__text
                                 h3 Обработка крупных потоков документов
                                 p Решение позволяет производить автоматизированную обработку крупных массивов документов по полному циклу: оцифровка, классификация (определение типа документа по внешнему виду), извлечение атрибутивной информации, экспорт данных в целевые системы, хранение документов в электронном виде.
-                .solutions__round
+                .solutions__round.an.fadeIn-scaleFrom
                     img(src=require("../images/shape.png") alt="")
             .solutions__item
                 .case
                     .solutions__wrap
-                        .solutions__img-wrap
+                        .solutions__img-wrap.an.fadeIn-scaleTo
                             .solutions__img
                                 img(src=require("../images/solution-2.png") alt="")
-                        .solutions__content
+                        .solutions__content.an.fadeIn-up(data-timeout="0.1s")
                             .solutions__text
                                 h3 Обработка запросов / текстовая аналитика
                                 p Решение позволяет производить автоматизированную обработку крупных массивов документов с  использованием алгоритмов интеллектуального анализа текстовых данных (на естественных языках) и дальнейшей классификации документов на основе их содержания с выделением ряда смысловых сущностей: адрес, дата, ФИО, содержание запроса/обращения. На основе полученных данных система определяет кому или на какое подразделение необходимо направить поступивший запрос или обращение
-                .solutions__round
+                .solutions__round.an.fadeIn-scaleFrom
                     img(src=require("../images/shape.png") alt="")
             .solutions__item
                 .case
                     .solutions__wrap
-                        .solutions__img-wrap
+                        .solutions__img-wrap.an.fadeIn-scaleTo
                             .solutions__img
                                 img(src=require("../images/solution-3.png") alt="")
-                        .solutions__content
+                        .solutions__content.an.fadeIn-up(data-timeout="0.1s")
                             .solutions__text
                                 h3 Автоматизация кадрового документооборота
                                 p HR-ЭДО - это система автоматизации процессов кадрового документооборота и взаимодействия с удаленными сотрудниками. Решение позволяет автоматизировать процессы кадрового документооборота и обеспечить взаимодействие с сотрудниками работающими удаленно с соблюдение требований Российского законодательства.
@@ -75,54 +75,52 @@ block content
                                     li Отправка уведомлений и распоряжений
                                     li Запросы на предоставление документов
                                     li Оформление заявлений на обучение (повышение квалификации) сотрудника
-                .solutions__round
+                .solutions__round.an.fadeIn-scaleFrom
                     img(src=require("../images/shape.png") alt="")
             .solutions__item
                 .case
                     .solutions__wrap
-                        .solutions__img-wrap
+                        .solutions__img-wrap.an.fadeIn-scaleTo
                             .solutions__img
                                 img(src=require("../images/solution-4.png") alt="")
-                        .solutions__content
+                        .solutions__content.an.fadeIn-up(data-timeout="0.1s")
                             .solutions__text
                                 h3 Интеллектуальный поиск (работа с архивами)
                                 p Решение для быстрого поиска информации из всех корпоративных систем с использованием технологий искусственного интеллекта и применением семантического анализа текста. Позволяет производить расширенный поиск по заданным ключевым словам, с подбором синонимичных и смысловых значений.
                                 p Система производит извлечение объектов (мета-данные), фактов и связей между ними, помогает находить закономерности в большом массиве данных, предоставляя информацию пользователю для принятия необходимого решения.
-
-                .solutions__round
+                .solutions__round.an.fadeIn-scaleFrom
                     img(src=require("../images/shape.png") alt="")
-
             .solutions__item
                 .case
                     .solutions__wrap
-                        .solutions__img-wrap
+                        .solutions__img-wrap.an.fadeIn-scaleTo
                             .solutions__img
                                 img(src=require("../images/solution-5.png") alt="")
-                        .solutions__content
+                        .solutions__content.an.fadeIn-up(data-timeout="0.1s")
                             .solutions__text
                                 h3 Система управления бизнес-процессами
                                 p В основе решения лежит универсальная и гибкая платформа нового поколения с современным интерфейсом для настройки и организации сложных бизнес-процессов и автоматизации документооборота компаний в различных сферах бизнеса. 
                                 p Высокую скорость работы - меньше секунды на все основные операции: система оптимизирована для работы в современных условиях распределенных сетей, в том числе на слабых каналах передачи данных.
-                .solutions__round
+                .solutions__round.an.fadeIn-scaleFrom
                     img(src=require("../images/shape.png") alt="")
     
     .consult#consult
         .case
             .consult__list.row
-                .consult__item
+                .consult__item.an.fadeIn-up
                     .consult__title.h2 #[b Консалтинг]
                     .consult__text
                         p Оказание информационно-аналитических услуг по вопросам ИТ-процессов, ИТ-архитектуры, эксплуатации, выбора аппаратно-программных решений, средств виртуализации, автоматизации и управления ресурсами, а так же предоставление услуг проектирования, внедрения, обучения и независимой экспертной оценки эффективности использования ИТ?
-                .consult__item
+                .consult__item.an.fadeIn-up(data-timeout="0.1s")
                     .consult__text
                         h4  Исследование ИТ-инфраструктуры
                         p Обеспечивает получение объективной, актуальной, систематизированной и достоверной информации о составе и состоянии существующей ИТ-инфраструктуры и позволяет снизить риски при планировании и реализации ИТ-проектов, обеспечить соответствие лицензионным и нормативным требованиям, повысить эффективность использования имеющихся ресурсов и получить базовые рекомендации по дальнейшему развитию ИТ-инфраструктуры.
-                .consult__item
+                .consult__item.an.fadeIn-up(data-timeout="0.2s")
                     .consult__name 
                     .consult__text
                         h4 Анализ производительности #[br]ИТ-инфраструктуры
                         p Позволяет определить не только актуальный состав, но выявить возможные резервы таковой, недочеты в её работе или отдельных подсистем, а также определить точки отказа и потенциальные «узкие места», которые могут стать причиной потери ценной информации или же
-                .consult__item
+                .consult__item.an.fadeIn-up(data-timeout="0.3s")
                     .consult__name
                     .consult__text
                         h4 Оптимизация ИТ-инфраструктуры
@@ -132,12 +130,12 @@ block content
         .case
             .about__wrap.row
                 .about__content
-                    .about__title.h2 О компании
-                    .about__text
+                    .about__title.h2.an.fadeIn-up О компании
+                    .about__text.an.fadeIn-up(data-timeout="0.1s")
                         p Компания «Конфидент сервис» располагает широкими возможностями и глубоким знанием отрасли, что позволяет ей успешно решать самые сложные задачи своих клиентов.
                         p Мы открылись в 2015 году и гордимся тем, что количество наших клиентов — новых и обращающихся повторно — продолжает расти.
                         p Хотите воспользоваться опытом компании «Конфидент сервис» в интересах своего бизнеса? Свяжитесь с нами, и мы расскажем обо всем подробно.
-                .about__img-wrap
+                .about__img-wrap.an.fadeIn-scaleTo
                     .about__img
                         img(src=require("../images/about-img.png") alt="")
                     .about__desc
@@ -147,21 +145,22 @@ block content
 
     .questions#contacts
         .case
-            .questions__wrap
-                .questions__title Остались #[b вопросы?]
-                .questions__text Оставьте заявку и мы перезвоним вам в ближайшее время!
-                .questions__form
-                    .questions__field.field.--required
-                        .field__wrap
-                            input.field__area(type="text" name="name" placeholder="Ваше имя")
-                    .questions__field.field.--phone.--required
-                        .field__wrap
-                            input.field__area(type="tel" name="phone" placeholder="Ваш телефон")
-                    button.questions__button.button Оставить заявку
+            .questions__wrap.an.fadeIn
+                .questions__info
+                    .questions__title.an.fadeIn-up Остались #[b вопросы?]
+                    .questions__text.an.fadeIn-up(data-timeout="0.1s") Оставьте заявку и мы перезвоним вам в ближайшее время!
+                    .questions__form.an.fadeIn-up(data-timeout="0.15s")
+                        .questions__field.field.--required
+                            .field__wrap
+                                input.field__area(type="text" name="name" placeholder="Ваше имя")
+                        .questions__field.field.--phone.--required
+                            .field__wrap
+                                input.field__area(type="tel" name="phone" placeholder="Ваш телефон")
+                        button.questions__button.button.--orange Оставить заявку
                 .questions__bg
                     img(src=require("../images/questions-bg.png") alt="")
                 .questions__rounds
-                    .questions__round
+                    .questions__round.an.fadeIn-scaleFrom
                         img(src=require("../images/shape.png"), alt="")
-                    .questions__round
+                    .questions__round.an.fadeIn-scaleFrom
                         img(src=require("../images/shape.png"), alt="")

@@ -1,0 +1,23 @@
+.button
+  z-index: 1
+  padding: 10px
+  font-size: 14px
+  font-weight: 600
+  transition: .3s
+  color: var(--color-white)
+  font-family: var(--ff-main)
+  text-transform: uppercase
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  position: relative
+  cursor: pointer
+  outline: none
+  width: auto
+  &.--orange
+    border-radius: 30px
+    background: linear-gradient(0deg, rgba(240,126,0,1) 0%, rgba(240,186,0,1) 100%)
+    box-shadow: 5px 8px 27px 0px rgba(240, 126, 0, 0.28)
+    &:hover
+      box-shadow: 5px 8px 27px 0px rgba(240, 126, 0, 0)

@@ -1,0 +1,26 @@
+.field
+  display: block
+  position: relative
+  &__wrap
+    position: relative
+  &__area
+    width: 100%
+    padding: 24px 28px
+    font-size: 14px
+    font-family: var(--ff-main)
+    border-radius: 10px
+    transition: .3s
+    background: #f0f3f5
+    position: relative
+    &::placeholder
+      opacity: 1
+      transition: .3s
+    &:focus
+      &::placeholder
+        opacity: 0
+  &.--error
+    .field
+      &__area
+        color: var(--color-orange)
+        &::placeholder
+          color: var(--color-orange)
