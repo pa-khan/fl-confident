@@ -1,4 +1,6 @@
+const html = document.querySelector('html');
 const body = document.body;
+const wrap = document.querySelector('.wrap');
 
 document.addEventListener('DOMContentLoaded', () => {
     // set mode classes
@@ -7,6 +9,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // set css variables
     setSizes();
     window.addEventListener('resize', setSizes);
+
+    //  header menu
+    let menuHam = document.querySelector('.ham');
+    let menuNav = document.querySelector('.header__nav');
+
+    if (menuHam) {
+        for (let i = 0; i < 4; i++) {
+            let div = document.createElement('div');
+            menuHam.append(div);
+        }
+
+        menuHam.addEventListener('click', () => {
+            menuHam.classList.toggle('--toggle');
+            menuNav.classList.toggle('--toggle');
+            html.classList.toggle('overflow-disable');
+            body.classList.toggle('overflow-disable');
+            wrap.classList.toggle('overflow-disable');
+        });
+    }
 
     // animation
     let anBlocks = document.querySelectorAll('.an');
