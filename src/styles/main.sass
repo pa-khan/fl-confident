@@ -19,21 +19,22 @@
     padding-bottom: 8px
   &__logo
     width: 250px
-    margin-left: -5px
-    margin-right: 60px
+    margin-right: 50px
   &__nav
     padding-top: 7px
     li
-      margin-right: 38px
+      margin-right: 33px
       &:last-child
         margin-right: 0
     a
       font-size: 14px
       font-weight: 500
       text-transform: uppercase
+      &:hover
+        color: var(--color-orange)
   &__call
     margin-left: auto
-    margin-right: -30px
+    margin-right: -40px
 
 .call
   position: relative
@@ -50,7 +51,7 @@
       color: #z3c3c3c
   &__icon-right
     position: absolute
-    top: -48px
+    top: -70px
     right: 0
     svg
       &:nth-of-type(2)
@@ -65,7 +66,7 @@
   background: #f4f6f8
   &__wrap
     position: relative
-    padding-top: 135px
+    padding-top: 145px
     padding-bottom: 155px
   &__content
     width: 100%
@@ -77,11 +78,12 @@
     color: #727272
     text-transform: uppercase
     font-family: var(--ff-magistral)
-    margin-bottom: 35px
+    margin-bottom: 50px
     b
       color: #f4f6f8
       text-shadow: 0px -1px #f07e00, 1px -1px #f07e00, 1px 0px #f07e00, 1px 1px #f07e00, 0px 1px #f07e00, -1px 1px #f07e00, -1px 0px #f07e00, -1px -1px #f07e00, 0px -2px #f07e00, 2px -2px #f07e00, 2px 0px #f07e00, 2px 2px #f07e00, 0px 2px #f07e00, -2px 2px #f07e00, -2px 0px #f07e00, -2px -2px #f07e00
   &__list
+    margin-left: 20px
     display: flex
   &__item
     display: flex
@@ -94,7 +96,7 @@
     background-color: #fff
     border-radius: 0 0 35px 0
     font-family: var(--ff-akrobat)
-    padding: 10px 50px
+    padding: 10px 56px
     font-size: 30px
     line-height: 36px
     &:last-child
@@ -119,13 +121,18 @@
         font-weight: 800
         color: #f07e00
   &__img
+    z-index: 1
     position: absolute
-    top: 20px
-    right: -280px
+    top: 33px
+    right: -300px
   &__round
     position: absolute
     bottom: 275px
     left: -25px
+  &__lines
+    position: absolute
+    right: -140px
+    top: 65px
 
 .h2
   font-size: 50px
@@ -137,14 +144,14 @@
   padding-top: 85px
   &__title
     text-align: center
-    margin-bottom: -25px
+    // margin-bottom: -25px
   &__wrap
     display: flex
     flex-wrap: wrap
   &__item
     position: relative
-    padding-top: 115px
-    padding-bottom: 65px
+    padding-top: 98px
+    padding-bottom: 35px
     &:nth-of-type(odd)
       background: #fff
       .solutions
@@ -152,14 +159,15 @@
           justify-content: flex-end
           margin-left: auto
         &__content
-          padding-left: 30px
+          padding-left: 35px
     &:nth-of-type(even)
       background: #f4f6f8
       .solutions
         &__img-wrap
           order: 2
+          right: -14px
         &__content
-          padding-right: 30px
+          padding-right: 10px
     &:nth-of-type(1)
       z-index: 2
       .solutions
@@ -170,6 +178,7 @@
           right: 100px
           bottom: -25px
     &:nth-of-type(2)
+      padding-bottom: 90px
       .solutions
         &__round
           width: 195px
@@ -177,14 +186,19 @@
           top: 70px
     &:nth-of-type(3)
       z-index: 2
+      padding-bottom: 70px
       .solutions
         &__img-wrap
           margin-top: -30px
+        &__text
+          h3
+            width: calc( 100% + 15px )
         &__round
           right: -40px
           bottom: -65px
           width: 185px
     &:nth-of-type(4)
+      padding-bottom: 80px
       .solutions
         &__round
           left: 45px
@@ -192,6 +206,8 @@
           bottom: -78px
     &:nth-of-type(5)
       z-index: 2
+      padding-top: 120px
+      padding-bottom: 10px
       .solutions
         &__img-wrap
           margin-top: -70px
@@ -211,7 +227,6 @@
   &__content
     width: calc( 100% - 455px )
   &__text
-    // max-width: 650px
     font-size: 18px
     line-height: 26px
     color: #606f7b
@@ -222,7 +237,7 @@
       font-weight: 600
       margin-top: 35px
       color: #585858
-      margin-bottom: 30px
+      margin-bottom: 40px
     h4
       display: block
       font-size: 18px
@@ -231,7 +246,7 @@
       color: #3c3c3c
       text-transform: uppercase
       margin-top: 35px
-      margin-bottom: 25px
+      margin-bottom: 20px
     p
       margin-bottom: 20px
     ul
@@ -242,7 +257,7 @@
       font-size: 16px
       line-height: 20px
       padding-left: 20px
-      margin-bottom: 18px
+      margin-bottom: 16px
       &::before
         content: ''
         position: absolute
