@@ -1,8 +1,10 @@
 extends ../layout/template
 block vars
     -
-        title = "Главная страница"
+        title = "Confident Service"
+
 block content
+
     .intro#intro
         .case
             .intro__wrap
@@ -23,7 +25,6 @@ block content
                     img(src=require("../images/lines.png") alt="")
         .intro__round
             img(src=require("../images/shape.png") alt="")
-
 
     .solutions#solutions
         .case
@@ -104,6 +105,7 @@ block content
                                 p Высокую скорость работы - меньше секунды на все основные операции: система оптимизирована для работы в современных условиях распределенных сетей, в том числе на слабых каналах передачи данных.
                 .solutions__round
                     img(src=require("../images/shape.png") alt="")
+    
     .consult#consult
         .case
             .consult__list.row
@@ -118,7 +120,7 @@ block content
                 .consult__item
                     .consult__name 
                     .consult__text
-                        h4 Анализ производительности
+                        h4 Анализ производительности #[br]ИТ-инфраструктуры
                         p Позволяет определить не только актуальный состав, но выявить возможные резервы таковой, недочеты в её работе или отдельных подсистем, а также определить точки отказа и потенциальные «узкие места», которые могут стать причиной потери ценной информации или же
                 .consult__item
                     .consult__name
@@ -142,7 +144,6 @@ block content
                         .about__desc-value 7 лет на рынке
                         .about__desc-img
                             img(src=require("../images/about-desc-bg.png") alt="")
-                    
 
     .questions#contacts
         .case

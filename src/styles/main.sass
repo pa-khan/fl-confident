@@ -34,7 +34,7 @@
         color: var(--color-orange)
   &__call
     margin-left: auto
-    margin-right: -40px
+    margin-right: -30px
 
 .call
   position: relative
@@ -124,7 +124,7 @@
     z-index: 1
     position: absolute
     top: 33px
-    right: -300px
+    right: -280px
   &__round
     position: absolute
     bottom: 275px
@@ -279,7 +279,7 @@
       height: 100%
 
 .consult
-  padding-top: 95px
+  padding-top: 122px
   padding-bottom: 55px
   background: #f4f6f8
   &__list
@@ -337,8 +337,9 @@
   background: #f4f6f8
   &__content
     max-width: 545px
+    margin-top: 10px
   &__title
-    margin-bottom: 35px
+    margin-bottom: 45px
   &__text
     font-size: 16px
     line-height: 24px
@@ -350,6 +351,7 @@
       &:last-child
         margin-bottom: 0
   &__img-wrap
+    right: 20px
     position: relative
     width: calc( 100% - 545px )
     padding-left: 32px
@@ -369,6 +371,7 @@
       padding: 14px 28px 34px 24px
       font-size: 26px
       color: #fff
+      text-transform: uppercase
       font-family: var(--ff-magistral)
 
   &__img
@@ -380,3 +383,36 @@
 .questions
   background: #f4f6f8
   padding-bottom: 110px
+
+.footer
+  padding: 45px 0
+  background: #292d30
+  color: var(--color-white)
+  &__wrap
+    align-items: center
+  &__logo
+    max-width: 260px
+    margin-right: auto
+  &__nav
+    li
+      margin-right: 35px
+      &:last-child
+        margin-right: 0
+    a
+      font-size: 14px
+      font-weight: 500
+      text-transform: uppercase
+      color: var(--color-white)
+      &:hover
+        color: var(--color-orange)
+  &__phone
+    margin-left: auto
+    display: flex
+    align-items: center
+    &-icon
+      margin-right: 5px
+    &-value
+      a
+        font-size: 18px
+        font-weight: 600
+        color: var(--color-white)
