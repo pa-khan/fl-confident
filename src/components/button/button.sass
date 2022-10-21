@@ -15,9 +15,27 @@
   cursor: pointer
   outline: none
   width: auto
+  overflow: hidden
+  &::before, &::after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    transition: .3s
   &.--orange
     border-radius: 30px
-    background: linear-gradient(0deg, rgba(240,126,0,1) 0%, rgba(240,186,0,1) 100%)
     box-shadow: 5px 8px 27px 0px rgba(240, 126, 0, 0.28)
+    &::before
+      z-index: -2
+      background: linear-gradient(0deg, rgba(240,126,0,1) 0%, rgba(240,186,0,1) 100%)
+    &:after
+      z-index: -1
+      opacity: 0
+      background: linear-gradient(180deg, rgba(240,126,0,1) 0%, rgba(240,186,0,1) 100%)
+
     &:hover
       box-shadow: 5px 8px 27px 0px rgba(240, 126, 0, 0)
+      &::after
+        opacity: 1

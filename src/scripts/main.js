@@ -1,15 +1,10 @@
+import IMask from 'imask';
+
 const html = document.querySelector('html');
 const body = document.body;
 const wrap = document.querySelector('.wrap');
 
 document.addEventListener('DOMContentLoaded', () => {
-    // set mode classes
-    initDefaultClasses();
-
-    // set css variables
-    setSizes();
-    window.addEventListener('resize', setSizes);
-
     //  header menu
     let menuHam = document.querySelector('.ham');
     let menuNav = document.querySelector('.header__nav');
@@ -52,27 +47,22 @@ document.addEventListener('DOMContentLoaded', () => {
             animatedBlocks();
         });
     }, 500);
+
+
+    const fields = document.querySelectorAll('.field');
+    fields.forEach((field) => {
+        field.area = field.querySelector('.field__area');
+
+        if (field.classList.contains('--phone')) {
+            IMask(field.area, {
+                mask: '+ {7} (000) 000-00-00'
+            })
+        }
+
+
+        field.area.addEventListener('focusin', () => {
+            field.classList.remove('--error');
+        });
+
+    });
 });
-
-function initDefaultClasses() {
-    if (!window._CLASS) {
-        window._CLASS = {};
-        window._CLASS.error = '--error';
-        window._CLASS.filled = '--filled';
-        window._CLASS.selected = '--selected';
-        window._CLASS.checked = '--checked';
-    }
-}
-
-function setSizes() {
-    const windowWidth = window.screen.width,
-        windowHeight = window.screen.height,
-        documentWidth = body.offsetWidth,
-        documentHeight = body.offsetHeight;
-
-    body.style.setProperty('--w-w', windowWidth + 'px');
-    body.style.setProperty('--w-h', windowHeight + 'px');
-
-    body.style.setProperty('--d-w', documentWidth + 'px');
-    body.style.setProperty('--d-h', documentHeight + 'px');
-}

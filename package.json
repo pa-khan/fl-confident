@@ -33,5 +33,8 @@
   },
   "author": "",
   "license": "ISC",
-  "description": "My webpack project"
+  "description": "My webpack project",
+  "dependencies": {
+    "imask": "^6.4.3"
+  }
 }
