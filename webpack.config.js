@@ -46,7 +46,7 @@ const config = {
     entry: entryPugFiles(PATHS.src + '/pages/'),
     output: {
         path: path.resolve(__dirname, './dist'),
-        filename: 'assets/js/[name].[contenthash:8].js',
+        filename: 'assets/js/[name].js',
         publicPath: '/'
     },
     devServer: {
@@ -74,9 +74,9 @@ const config = {
         new CleanWebpackPlugin(),
         new PugPlugin({
             pretty: true,
-            // extractCss: {
-            //     filename: 'assets/css/[name].[contenthash:8].css'
-            // },
+            extractCss: {
+                filename: 'assets/css/[name].css'
+            },
             filename: keepPugFolderStructure,
         })
 

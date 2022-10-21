@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //  header menu
     let menuHam = document.querySelector('.ham');
     let menuNav = document.querySelector('.header__nav');
+    let menuNavLinks = document.querySelectorAll('.header__nav a');
 
     if (menuHam) {
         for (let i = 0; i < 4; i++) {
@@ -21,6 +22,16 @@ document.addEventListener('DOMContentLoaded', () => {
             html.classList.toggle('overflow-disable');
             body.classList.toggle('overflow-disable');
             wrap.classList.toggle('overflow-disable');
+        });
+
+        menuNavLinks.forEach((link) => {
+            link.addEventListener('click', () => {
+                menuHam.classList.remove('--toggle');
+                menuNav.classList.remove('--toggle');
+                html.classList.remove('overflow-disable');
+                body.classList.remove('overflow-disable');
+                wrap.classList.remove('overflow-disable');
+            });
         });
     }
 
@@ -55,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (field.classList.contains('--phone')) {
             IMask(field.area, {
-                mask: '+ {7} (000) 000-00-00'
+                mask: '+{7} (000) 000-00-00'
             })
         }
 
